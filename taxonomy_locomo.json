@@ -1,0 +1,597 @@
+{
+  "benchmark": "locomo",
+  "total": 82,
+  "correct": 11,
+  "wrong": 71,
+  "categories": {
+    "DATE_FORMAT_ERROR": 20,
+    "GENERATION_ERROR": 18,
+    "RETRIEVAL_FAIL": 22,
+    "CORRECT": 11,
+    "PARTIAL_ANSWER": 8,
+    "FORMAT_ARTIFACT": 3
+  },
+  "failure_pct": {
+    "DATE_FORMAT_ERROR": 28.2,
+    "GENERATION_ERROR": 25.4,
+    "RETRIEVAL_FAIL": 31.0,
+    "PARTIAL_ANSWER": 11.3,
+    "FORMAT_ARTIFACT": 4.2
+  },
+  "classified": [
+    {
+      "question_id": "When did Caroline go to the LGBTQ support group?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "7 May 2023",
+      "answer": "Yesterday."
+    },
+    {
+      "question_id": "When did Melanie paint a sunrise?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "2022",
+      "answer": "Last year."
+    },
+    {
+      "question_id": "What fields would Caroline be likely to pursue in ",
+      "type": "open-domain",
+      "category": "GENERATION_ERROR",
+      "gold": "Psychology, counseling certification",
+      "answer": "Counseling and mental health."
+    },
+    {
+      "question_id": "What did Caroline research?",
+      "type": "single-hop",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Adoption agencies",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What is Caroline's identity?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Transgender woman",
+      "answer": "Transgender"
+    },
+    {
+      "question_id": "When did Melanie run a charity race?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The sunday before 25 May 2023",
+      "answer": "last Saturday"
+    },
+    {
+      "question_id": "When is Melanie planning on going camping?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "June 2023",
+      "answer": "Next month"
+    },
+    {
+      "question_id": "What is Caroline's relationship status?",
+      "type": "single-hop",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Single",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Caroline give a speech at a school?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The week before 9 June 2023",
+      "answer": "Last week."
+    },
+    {
+      "question_id": "When did Caroline meet up with her friends, family",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The week before 9 June 2023",
+      "answer": "Last week."
+    },
+    {
+      "question_id": "How long has Caroline had her current group of fri",
+      "type": "temporal",
+      "category": "CORRECT",
+      "gold": "4 years",
+      "answer": "4 years"
+    },
+    {
+      "question_id": "Where did Caroline move from 4 years ago?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Sweden",
+      "answer": "Her home country."
+    },
+    {
+      "question_id": "How long ago was Caroline's 18th birthday?",
+      "type": "temporal",
+      "category": "CORRECT",
+      "gold": "10 years ago",
+      "answer": "10 years ago"
+    },
+    {
+      "question_id": "What career path has Caroline decided to persue?",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "counseling or mental health for Transgender people",
+      "answer": "Counseling and mental health."
+    },
+    {
+      "question_id": "Would Caroline still want to pursue counseling as ",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Likely no",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What activities does Melanie partake in?",
+      "type": "single-hop",
+      "category": "PARTIAL_ANSWER",
+      "gold": "pottery, camping, painting, swimming",
+      "answer": "Pottery."
+    },
+    {
+      "question_id": "When did Melanie sign up for a pottery class?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "2 July 2023",
+      "answer": "Yesterday."
+    },
+    {
+      "question_id": "When is Caroline going to the transgender conferen",
+      "type": "temporal",
+      "category": "GENERATION_ERROR",
+      "gold": "July 2023",
+      "answer": "This month."
+    },
+    {
+      "question_id": "Where has Melanie camped?",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "beach, mountains, forest",
+      "answer": "Mountains, beach, and forest."
+    },
+    {
+      "question_id": "What do Melanie's kids like?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "dinosaurs, nature",
+      "answer": "Nature and making things with clay."
+    },
+    {
+      "question_id": "When did Melanie go to the museum?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "5 July 2023",
+      "answer": "Yesterday."
+    },
+    {
+      "question_id": "When did Caroline have a picnic?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The week before 6 July 2023",
+      "answer": "Last week."
+    },
+    {
+      "question_id": "Would Caroline likely have Dr. Seuss books on her ",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Yes, since she collects classic children's books",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What books has Melanie read?",
+      "type": "single-hop",
+      "category": "PARTIAL_ANSWER",
+      "gold": "\"Nothing is Impossible\", \"Charlotte's Web\"",
+      "answer": "Charlotte's Web"
+    },
+    {
+      "question_id": "What does Melanie do to destress?",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "Running, pottery",
+      "answer": "Running."
+    },
+    {
+      "question_id": "When did Caroline go to the LGBTQ conference?",
+      "type": "temporal",
+      "category": "GENERATION_ERROR",
+      "gold": "10 July 2023",
+      "answer": "Two days ago."
+    },
+    {
+      "question_id": "When did Melanie read the book \"nothing is impossi",
+      "type": "temporal",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "2022",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "Would Caroline pursue writing as a career option?",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "LIkely no; though she likes reading, she wants to be a counselor",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Caroline go to the adoption meeting?",
+      "type": "temporal",
+      "category": "PARTIAL_ANSWER",
+      "gold": "The friday before 15 July 2023",
+      "answer": "Last Friday"
+    },
+    {
+      "question_id": "When did Melanie go to the pottery workshop?",
+      "type": "temporal",
+      "category": "PARTIAL_ANSWER",
+      "gold": "The Friday before 15 July 2023",
+      "answer": "Last Fri"
+    },
+    {
+      "question_id": "Would Melanie be considered a member of the LGBTQ ",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Likely no, she does not refer to herself as part of it",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Melanie go camping in June?",
+      "type": "temporal",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "The week before 27 June 2023",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What LGBTQ+ events has Caroline participated in?",
+      "type": "single-hop",
+      "category": "FORMAT_ARTIFACT",
+      "gold": "Pride parade, school speech, support group",
+      "answer": "Caroline participated in an LGBTQ+ pride parade, an LGBTQ conference, a LGBTQ su"
+    },
+    {
+      "question_id": "When did Caroline go to a pride parade during the ",
+      "type": "temporal",
+      "category": "PARTIAL_ANSWER",
+      "gold": "The week before 3 July 2023",
+      "answer": "Last Friday"
+    },
+    {
+      "question_id": "What events has Caroline participated in to help c",
+      "type": "single-hop",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Mentoring program, school speech",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Melanie go camping in July?",
+      "type": "temporal",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "two weekends before 17 July 2023",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Caroline join a mentorship program?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The weekend before 17 July 2023",
+      "answer": "Last weekend"
+    },
+    {
+      "question_id": "What did Melanie paint recently?",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "sunset",
+      "answer": "A horse painting."
+    },
+    {
+      "question_id": "What activities has Melanie done with her family?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Pottery, painting, camping, museum, swimming, hiking",
+      "answer": "Played games, ate good food, hung out together, went camping in the forest, expl"
+    },
+    {
+      "question_id": "In what ways is Caroline participating in the LGBT",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Joining activist group, going to pride parades, participating in an art show, me",
+      "answer": "Caroline is participating by joining a new LGBTQ activist group, joining a mento"
+    },
+    {
+      "question_id": "How many times has Melanie gone to the beach in 20",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "2",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Caroline join a new activist group?",
+      "type": "temporal",
+      "category": "PARTIAL_ANSWER",
+      "gold": "The Tuesday before 20 July 2023",
+      "answer": "Last Tues."
+    },
+    {
+      "question_id": "Would Melanie be more interested in going to a nat",
+      "type": "open-domain",
+      "category": "FORMAT_ARTIFACT",
+      "gold": "National park; she likes the outdoors",
+      "answer": "A national park"
+    },
+    {
+      "question_id": "What kind of art does Caroline make?",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "abstract art",
+      "answer": "Drawing flowers and paintings."
+    },
+    {
+      "question_id": "When is Melanie's daughter's birthday?",
+      "type": "temporal",
+      "category": "GENERATION_ERROR",
+      "gold": "13 August",
+      "answer": "Last night."
+    },
+    {
+      "question_id": "When did Caroline attend a pride parade in August?",
+      "type": "temporal",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "The Friday before 14 August 2023",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "Would Melanie be considered an ally to the transge",
+      "type": "open-domain",
+      "category": "FORMAT_ARTIFACT",
+      "gold": "Yes, she is supportive",
+      "answer": "Yes"
+    },
+    {
+      "question_id": "Who supports Caroline when she has a negative expe",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Her mentors, family, and friends",
+      "answer": "Melanie and Caroline’s support network."
+    },
+    {
+      "question_id": "What types of pottery have Melanie and her kids ma",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "bowls, cup",
+      "answer": "Pots, bowls, and a cup."
+    },
+    {
+      "question_id": "When did Caroline and Melanie go to a pride feseti",
+      "type": "temporal",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "2022",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What would Caroline's political leaning likely be?",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Liberal",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What has Melanie painted?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Horse, sunset, sunrise",
+      "answer": "an abstract painting and a lake sunrise"
+    },
+    {
+      "question_id": "What are Melanie's pets' names?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Oliver, Luna, Bailey",
+      "answer": "Luna and Oliver"
+    },
+    {
+      "question_id": "When did Caroline apply to adoption agencies?",
+      "type": "temporal",
+      "category": "PARTIAL_ANSWER",
+      "gold": "The week of 23 August 2023",
+      "answer": "This week."
+    },
+    {
+      "question_id": "When did Caroline draw a self-portrait?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The week before 23 August 2023",
+      "answer": "Last week."
+    },
+    {
+      "question_id": "What subject have Caroline and Melanie both painte",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Sunsets",
+      "answer": "Flowers"
+    },
+    {
+      "question_id": "What symbols are important to Caroline?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Rainbow flag, transgender symbol",
+      "answer": "necklace and mural"
+    },
+    {
+      "question_id": "When did Caroline encounter people on a hike and h",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The week before 25 August 2023",
+      "answer": "Last week."
+    },
+    {
+      "question_id": "When did Melanie make a plate in pottery class?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "24 August 2023",
+      "answer": "Yesterday."
+    },
+    {
+      "question_id": "Would Caroline be considered religious?",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Somewhat, but not extremely religious",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What instruments does Melanie play?",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "clarinet and violin",
+      "answer": "violin and clarinet"
+    },
+    {
+      "question_id": "What musical artists/bands has Melanie seen?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Summer Sounds, Matt Patterson",
+      "answer": "Matt Patterson"
+    },
+    {
+      "question_id": "When did Melanie go to the park?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "27 August 2023",
+      "answer": "Yesterday."
+    },
+    {
+      "question_id": "When is Caroline's youth center putting on a talen",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "September 2023",
+      "answer": "Next month."
+    },
+    {
+      "question_id": "Would Melanie likely enjoy the song \"The Four Seas",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Yes; it's classical music",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What are some changes Caroline has faced during he",
+      "type": "single-hop",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Changes to her body, losing unsupportive friends",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What does Melanie do with her family on hikes?",
+      "type": "single-hop",
+      "category": "CORRECT",
+      "gold": "Roast marshmallows, tell stories",
+      "answer": "Hiking in the mountains and exploring forests."
+    },
+    {
+      "question_id": "When did Caroline go biking with friends?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "The weekend before 13 September 2023",
+      "answer": "Last weekend."
+    },
+    {
+      "question_id": "How long has Melanie been practicing art?",
+      "type": "temporal",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Since 2016",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What personality traits might Melanie say Caroline",
+      "type": "open-domain",
+      "category": "GENERATION_ERROR",
+      "gold": "Thoughtful, authentic, driven",
+      "answer": "Inspiring, courageous, dedicated to helping others, and goes after what she care"
+    },
+    {
+      "question_id": "What transgender-specific events has Caroline atte",
+      "type": "single-hop",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Poetry reading, conference",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What book did Melanie read from Caroline's suggest",
+      "type": "single-hop",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "\"Becoming Nicole\"",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Melanie's friend adopt a child?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "2022",
+      "answer": "last year"
+    },
+    {
+      "question_id": "When did Melanie get hurt?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "September 2023",
+      "answer": "Last month."
+    },
+    {
+      "question_id": "When did Melanie's family go on a roadtrip?",
+      "type": "temporal",
+      "category": "GENERATION_ERROR",
+      "gold": "The weekend before 20 October 2023",
+      "answer": "This past weekend."
+    },
+    {
+      "question_id": "How many children does Melanie have?",
+      "type": "single-hop",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "3",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "When did Melanie go on a hike after the roadtrip?",
+      "type": "single-hop",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "19 October 2023",
+      "answer": "Yesterday."
+    },
+    {
+      "question_id": "Would Melanie go on another roadtrip soon?",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "Likely no; since this one went badly",
+      "answer": "NOT ENOUGH INFO"
+    },
+    {
+      "question_id": "What items has Melanie bought?",
+      "type": "single-hop",
+      "category": "GENERATION_ERROR",
+      "gold": "Figurines, shoes",
+      "answer": "Figurines"
+    },
+    {
+      "question_id": "When did Caroline pass the adoption interview?",
+      "type": "temporal",
+      "category": "PARTIAL_ANSWER",
+      "gold": "The Friday before 22 October 2023",
+      "answer": "Last Friday."
+    },
+    {
+      "question_id": "When did Melanie buy the figurines?",
+      "type": "temporal",
+      "category": "DATE_FORMAT_ERROR",
+      "gold": "21 October 2023",
+      "answer": "Yesterday."
+    },
+    {
+      "question_id": "Would Caroline want to move back to her home count",
+      "type": "open-domain",
+      "category": "RETRIEVAL_FAIL",
+      "gold": "No; she's in the process of adopting children.",
+      "answer": "NOT ENOUGH INFO"
+    }
+  ]
+}
